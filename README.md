@@ -12,7 +12,7 @@ Kaiskuru Skistadion, Norway.
 
 ## How to use
 Please, refer to our public documentation for more information.
-![https://docs.evergine.com/2023.3.1/manual/addons/xrv/index.html](https://docs.evergine.com/2023.3.1/manual/addons/xrv/index.html)
+[https://docs.evergine.com/2023.3.1/manual/addons/xrv/index.html](https://docs.evergine.com/2023.3.1/manual/addons/xrv/index.html)
 
 ----
 Powered by **[Evergine](https://evergine.com)**
