@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<network-security-config>
-	<domain-config cleartextTrafficPermitted="true">
-		<!-- Sample IP cameras for Streaming Viewer module -->
-		<domain includeSubdomains="true">77.222.181.11</domain>
-	</domain-config>
-</network-security-config>

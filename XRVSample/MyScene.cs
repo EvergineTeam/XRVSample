@@ -1,6 +1,7 @@
 using Evergine.Framework;
 using Evergine.MRTK.Scenes;
 using Evergine.Xrv.Core;
+using Evergine.Xrv.Core.Networking;
 using System;
 
 namespace XRVSample
@@ -36,6 +37,18 @@ namespace XRVSample
             base.OnPostCreateXRScene();
             var xrv = Application.Current.Container.Resolve<XrvService>();
             xrv.Initialize(this);
+
+            var configuration = new NetworkConfigurationBuilder()
+                .ForApplication(nameof(XRVSample))
+                .UsePort(12345)
+                .SetQrCodeForSession("This is XRV!")
+                .Build();
+            xrv.Networking.Configuration = configuration;
+
+            // Uncomment to enable networking. Sessions are only supported for 
+            // ImageGallery and Ruler modules
+            //xrv.Networking.NetworkingAvailable = true;
+            xrv.Services.Passthrough.EnablePassthrough = true;
         }
     }
 }
