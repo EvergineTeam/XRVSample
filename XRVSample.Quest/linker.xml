@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <linker>
   <assembly fullname="XRVSample" />
-  <assembly fullname="XRVSample.Quest.NET6" />
+  <assembly fullname="XRVSample.Quest" />
 
   <assembly fullname="Evergine.Platform">
     <type fullname="Evergine.Platform.AssetsDirectory" />

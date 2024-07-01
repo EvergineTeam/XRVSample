@@ -1,19 +1,15 @@
-using Android.App;
 using Android.Content.PM;
-using Android.OS;
 using Android.Views;
-using Android.Widget;
 using System.Diagnostics;
 using Evergine.Common.Graphics;
 using Evergine.Framework.Services;
-using Evergine.Vulkan;
+using Evergine.OpenXR;
+using Evergine.AndroidView;
+using Activity = Android.App.Activity;
 using Display = Evergine.Framework.Graphics.Display;
 using Surface = Evergine.Common.Graphics.Surface;
-using Evergine.OpenXR;
-using Activity = Android.App.Activity;
-using Evergine.AndroidView;
 
-namespace XRVSample.Quest.NET6
+namespace XRVSample.Quest
 {
     [Activity(Label = "@string/app_name",
         ConfigurationChanges = ConfigChanges.KeyboardHidden | ConfigChanges.Orientation | ConfigChanges.ScreenSize | ConfigChanges.ScreenLayout | ConfigChanges.UiMode | ConfigChanges.Navigation | ConfigChanges.Keyboard,
@@ -111,18 +107,18 @@ namespace XRVSample.Quest.NET6
 
             // Create OpenXR Platform
             openXRPlatform = new OpenXRPlatform(
-                new string[]
-                {
+                new string[] 
+                { 
                     "XR_EXT_hand_tracking",         // Enable hand tracking in OpenXR application
                     "XR_FB_hand_tracking_aim",      // Allow to use hand gestures in Meta Quest devices
                     "XR_FB_hand_tracking_mesh",     // Obtain hand mesh in Meta Quest devices
                     
                     "XR_FB_passthrough",         // Enable Passthrough in Meta Quest devices
                     "XR_FB_triangle_mesh",       // Allow to project Passthrough on Meshes
-                },
-                new OpenXRInteractionProfile[]
-                {
-                    DefaultInteractionProfiles.OculusTouchProfile
+                }, 
+                new OpenXRInteractionProfile[] 
+                { 
+                    DefaultInteractionProfiles.OculusTouchProfile 
                 })
             {
                 RenderMirrorTexture = false,
@@ -136,7 +132,7 @@ namespace XRVSample.Quest.NET6
             var graphicsPresenter = application.Container.Resolve<GraphicsPresenter>();
             graphicsPresenter.AddDisplay("DefaultDisplay", openXRPlatform.Display);
             graphicsPresenter.AddDisplay("MirrorDisplay", mirrorDisplay);
-        }
     }
+}
 }
 

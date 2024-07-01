@@ -51,12 +51,11 @@ namespace XRVSample
 
         private void InitializeXrv()
         {
-            var containerUri = new Uri("https://xrvdevelopment.blob.core.windows.net/public");
+            var containerUri = new Uri("https://xrvdevelopment.blob.core.windows.net/publicmodels");
             var modelsAccess = AzureBlobFileAccess.CreateFromUri(containerUri);
-            modelsAccess.BaseDirectory = "models";
 
+            containerUri = new Uri("https://xrvdevelopment.blob.core.windows.net/publicimages");
             var imageGalleryFileAccess = AzureBlobFileAccess.CreateFromUri(containerUri);
-            imageGalleryFileAccess.BaseDirectory = "images";
 
             var xrv = new XrvService()
                 .AddModule(new RulerModule())

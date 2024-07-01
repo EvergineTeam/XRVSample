@@ -6,21 +6,21 @@
     <GenerateEvergineScenesCode>True</GenerateEvergineScenesCode>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Evergine.Common" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.Components" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.Framework" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.Mathematics" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.Platform" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.Bullet" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.Targets" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.CodeScenes" Version="2023.9.28.510" />
-    <PackageReference Include="Evergine.MRTK" Version="2023.9.28.1" />
-    <PackageReference Include="Evergine.Xrv.Core" Version="2023.9.28.3-preview" />
-    <PackageReference Include="Evergine.Xrv.ImageGallery" Version="2023.9.28.3-preview" />
-    <PackageReference Include="Evergine.Xrv.ModelViewer" Version="2023.9.28.3-preview" />
-    <PackageReference Include="Evergine.Xrv.Painter" Version="2023.9.28.3-preview" />
-    <PackageReference Include="Evergine.Xrv.Ruler" Version="2023.9.28.3-preview" />
-    <PackageReference Include="Evergine.Xrv.StreamingViewer" Version="2023.9.28.3-preview" />
+    <PackageReference Include="Evergine.Common" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.Components" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.Framework" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.Mathematics" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.Platform" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.Bullet" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.Targets" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.CodeScenes" Version="2024.6.28.10" />
+    <PackageReference Include="Evergine.MRTK" Version="2024.6.28.1" />
+    <PackageReference Include="Evergine.Xrv.Core" Version="2024.7.1.4-preview" />
+    <PackageReference Include="Evergine.Xrv.ImageGallery" Version="2024.7.1.4-preview" />
+    <PackageReference Include="Evergine.Xrv.ModelViewer" Version="2024.7.1.4-preview" />
+    <PackageReference Include="Evergine.Xrv.Painter" Version="2024.7.1.4-preview" />
+    <PackageReference Include="Evergine.Xrv.Ruler" Version="2024.7.1.4-preview" />
+    <PackageReference Include="Evergine.Xrv.StreamingViewer" Version="2024.7.1.4-preview" />
     <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
   </ItemGroup>
 </Project>
